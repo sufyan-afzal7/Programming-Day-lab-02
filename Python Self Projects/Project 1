@@ -1,6 +1,6 @@
 """
 This is a number Guessing Game in which user Enters two integers. 
-These integers are the rangr, one is lower integer and second is higher integer.
+These integers are the range, one is lower integer and second is higher integer.
 The user has only 7 tries to win the game.
 """
 import random
