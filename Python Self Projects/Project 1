@@ -16,3 +16,6 @@ for i in range(1,8):
     if a == x:
         print(f"You guess right in {i}th try. Congratulaations!")
         break
+    if i == 7:
+        print("You Lose.")
+        print("You wasted all of your credits.")
