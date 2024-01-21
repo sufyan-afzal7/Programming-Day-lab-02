@@ -1,152 +1,151 @@
-#This is a TIC TAC TOE game
-print("This is a tic toe Game!")
-print("[1    2    3]\n[4    5    6]\n[7    8    9]")
+def ticTacToeGame():
+    print("This is a tic toe Game!")
+    print("[1    2    3]\n[4    5    6]\n[7    8    9]")
 
-#creating list
-game1 = ["_","_","_"]
-game2 = ["_","_","_"]
-game3 = ["_","_","_"]
+    #creating list
+    game1 = ["_","_","_"]
+    game2 = ["_","_","_"]
+    game3 = ["_","_","_"]
 
 
-print("Enter index number to put your character.")
-print("User 1 has assigned character \"X\"")
-print("User 2 has assigned character \"O\"")
-print("_"*10)
-print("\n")
-print(game1)
-print(game2)
-print(game3)
-
-for i in range(1,6,1):
-    
-    user1 = int(input("User 1 Enter Index(1-9) number: "))
-    #checking user 1's input
-    if user1 == 1:
-        game1[0] = "X"
-    if user1 == 2:
-        game1[1] = "X"
-    if user1 == 3:
-        game1[2] = "X"
-    if user1 == 4:
-        game2[0] = "X"
-    if user1 == 5:
-        game2[1] = "X"
-    if user1 == 6:
-        game2[2] = "X"
-    if user1 == 7:
-        game3[0] = "X"
-    if user1 == 8:
-        game3[1] = "X"
-    if user1 == 9:
-        game3[2] = "X"
-    if user1 > 9 or user1 <1:
-        print("Invalid input")
-        
+    print("Enter index number to put your character.")
+    print("User 1 has assigned character \"X\"")
+    print("User 2 has assigned character \"O\"")
+    print("_"*10)
+    print("\n")
     print(game1)
     print(game2)
     print(game3)
-    print("_"*10)
-    print("\n")
-    
-    user2 = int(input("User 2 Enter Index(1-9) number: "))
-    #checking user 2's input
-    if user2 == 1:
-        game1[0] = "O"
-    if user2 == 2:
-        game1[1] = "O"
-    if user2 == 3:
-        game1[2] = "O"
-    if user2 == 4:
-        game2[0] = "O"
-    if user2 == 5:
-        game2[1] = "O"
-    if user2 == 6:
-        game2[2] = "O"
-    if user2 == 7:
-        game3[0] = "O"
-    if user2 == 8:
-        game3[1] = "O"
-    if user2 == 9:
-        game3[2] = "O"
-    if user2 > 9 or user2 < 1:
-        print("Invalid input")
+
+    for i in range(1,6,1):
         
+        user1 = int(input("User 1 Enter Index(1-9) number: "))
+        #checking user 1's input
+        if user1 == 1:
+            game1[0] = "X"
+        if user1 == 2:
+            game1[1] = "X"
+        if user1 == 3:
+            game1[2] = "X"
+        if user1 == 4:
+            game2[0] = "X"
+        if user1 == 5:
+            game2[1] = "X"
+        if user1 == 6:
+            game2[2] = "X"
+        if user1 == 7:
+            game3[0] = "X"
+        if user1 == 8:
+            game3[1] = "X"
+        if user1 == 9:
+            game3[2] = "X"
+        if user1 > 9 or user1 <1:
+            print("Invalid input")
+            
+        print(game1)
+        print(game2)
+        print(game3)
+        print("_"*10)
+        print("\n")
+        
+        user2 = int(input("User 2 Enter Index(1-9) number: "))
+        #checking user 2's input
+        if user2 == 1:
+            game1[0] = "O"
+        if user2 == 2:
+            game1[1] = "O"
+        if user2 == 3:
+            game1[2] = "O"
+        if user2 == 4:
+            game2[0] = "O"
+        if user2 == 5:
+            game2[1] = "O"
+        if user2 == 6:
+            game2[2] = "O"
+        if user2 == 7:
+            game3[0] = "O"
+        if user2 == 8:
+            game3[1] = "O"
+        if user2 == 9:
+            game3[2] = "O"
+        if user2 > 9 or user2 < 1:
+            print("Invalid input")
+            
+        print(game1)
+        print(game2)
+        print(game3)
+        print("_"*10)
+        print("\n")
+
+
+        #Announcing winner on the Basis of condition.
+        if game1[0] == game1[1] and game1[0] == game1[2]:
+            if game1[0] == "X" and game1[1] == "X" and game1[2] == "X":
+                print(f"User 1 wins.")
+            
+        elif game2[0] == game2[1] and game2[0] == game2[2]:
+            if game2[0] == "X" and game2[1] == "X" and game2[2] == "X":
+                print(f"User 1 wins.")
+            
+        elif game3[0] == game3[1] and game3[0] == game3[2]:
+            if game3[0] == "X" and game3[1] == "X" and game3[2] == "X":
+                print(f"User 1 wins.")
+            
+        elif game1[0] == game2[0] and game1[0] == game3[0]:
+            if game1[0] == "X" and game2[0] == "X" and game3[0] == "X":
+                print(f"User 1 wins.")
+            
+        elif game1[2] == game2[2] and game1[2] == game3[2]:
+            if game1[2] == "X" and game2[2] == "X" and game3[2] == "X":
+                print(f"User 1 wins.")
+            
+        elif game1[0] == game2[1] and game1[0] == game3[2]:
+            if game1[0] == "X" and game2[1] == "X" and game3[2] == "X":
+                print(f"User 1 wins.")
+            
+        elif game1[2] == game2[1] and game1[2] == game3[0]:
+            if game1[2] == "X" and game2[1] == "X" and game3[0] == "X":
+                print(f"User 1 wins.")
+            
+        else:
+            pass
+
+        if game1[0] == game1[1] and game1[0] == game1[2]:
+            if game1[0] == "O" and game1[1] == "O" and game1[2] == "O":
+                print(f"User 2 wins.")
+            
+        elif game2[0] == game2[1] and game2[0] == game2[2]:
+            if game2[0] == "O" and game2[1] == "O" and game2[2] == "O":
+                print(f"User 2 wins.")
+            
+        elif game3[0] == game3[1] and game3[0] == game3[2]:
+            if game3[0] == "O" and game3[1] == "O" and game3[2] == "O":
+                print(f"User 2 wins.")
+            
+        elif game1[0] == game2[0] and game1[0] == game3[0]:
+            if game1[0] == "O" and game2[0] == "O" and game3[0] == "O":
+                print(f"User 2 wins.")
+            
+        elif game1[2] == game2[2] and game1[2] == game3[2]:
+            if game1[2] == "O" and game2[2] == "O" and game3[2] == "O":
+                print(f"User 2 wins.")
+            
+        elif game1[0] == game2[1] and game1[0] == game3[2]:
+            if game1[0] == "O" and game2[1] == "O" and game3[2] == "O":
+                print(f"User 2 wins.")
+            
+        elif game1[2] == game2[1] and game1[2] == game3[0]:
+            if game1[2] == "O" and game2[1] == "O" and game3[0] == "O":
+                print(f"User 2 wins.")
+            
+        else:
+            pass
+        if i == 9:
+            break
+
+    #final result    
     print(game1)
     print(game2)
     print(game3)
-    print("_"*10)
-    print("\n")
 
-
-    #Announcing winner on the Basis of condition.
-    if game1[0] == game1[1] and game1[0] == game1[2]:
-        if game1[0] == "X" and game1[1] == "X" and game1[2] == "X":
-            print(f"User 1 wins.")
-        
-    elif game2[0] == game2[1] and game2[0] == game2[2]:
-        if game2[0] == "X" and game2[1] == "X" and game2[2] == "X":
-            print(f"User 1 wins.")
-        
-    elif game3[0] == game3[1] and game3[0] == game3[2]:
-        if game3[0] == "X" and game3[1] == "X" and game3[2] == "X":
-            print(f"User 1 wins.")
-        
-    elif game1[0] == game2[0] and game1[0] == game3[0]:
-        if game1[0] == "X" and game2[0] == "X" and game3[0] == "X":
-            print(f"User 1 wins.")
-        
-    elif game1[2] == game2[2] and game1[2] == game3[2]:
-        if game1[2] == "X" and game2[2] == "X" and game3[2] == "X":
-            print(f"User 1 wins.")
-        
-    elif game1[0] == game2[1] and game1[0] == game3[2]:
-        if game1[0] == "X" and game2[1] == "X" and game3[2] == "X":
-            print(f"User 1 wins.")
-        
-    elif game1[2] == game2[1] and game1[2] == game3[0]:
-        if game1[2] == "X" and game2[1] == "X" and game3[0] == "X":
-            print(f"User 1 wins.")
-        
-    else:
-        pass
-
-    if game1[0] == game1[1] and game1[0] == game1[2]:
-        if game1[0] == "O" and game1[1] == "O" and game1[2] == "O":
-            print(f"User 2 wins.")
-        
-    elif game2[0] == game2[1] and game2[0] == game2[2]:
-        if game2[0] == "O" and game2[1] == "O" and game2[2] == "O":
-            print(f"User 2 wins.")
-        
-    elif game3[0] == game3[1] and game3[0] == game3[2]:
-        if game3[0] == "O" and game3[1] == "O" and game3[2] == "O":
-            print(f"User 2 wins.")
-        
-    elif game1[0] == game2[0] and game1[0] == game3[0]:
-        if game1[0] == "O" and game2[0] == "O" and game3[0] == "O":
-            print(f"User 2 wins.")
-        
-    elif game1[2] == game2[2] and game1[2] == game3[2]:
-        if game1[2] == "O" and game2[2] == "O" and game3[2] == "O":
-            print(f"User 2 wins.")
-        
-    elif game1[0] == game2[1] and game1[0] == game3[2]:
-        if game1[0] == "O" and game2[1] == "O" and game3[2] == "O":
-            print(f"User 2 wins.")
-        
-    elif game1[2] == game2[1] and game1[2] == game3[0]:
-        if game1[2] == "O" and game2[1] == "O" and game3[0] == "O":
-            print(f"User 2 wins.")
-        
-    else:
-        pass
-    if i == 9:
-        break
-
-#final result
-print("\n")
-print("_"*10)
-print("Final Result")
-print(game1)
-print(game2)
-print(game3)
+ticTacToeGame()
