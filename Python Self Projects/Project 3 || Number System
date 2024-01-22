@@ -1,3 +1,22 @@
+#        print("Enter 1 to find the sum of a given Number.")
+#        print("Enter 2 to find the sum of square of given Number.")
+#        print("Enter 3 to find the sum of cube of given Number.")
+#        print("Enter 4 to check weather the number is ArmStrong or Not.")
+#        print("Enter 5 to find the Product of a given Number.")
+#        print("Enter 6 to find the Reverse of the Number.")
+#        print("Enter 7 to find the sum of even and product of odd Numbers.")
+#        print("Enter 8 to check weather the number is Palindrome or Not.")
+#        print("Enter 9 to find the factors of given Number.")
+#        print("Enter 10 to find the Total Number of Factors of a given Number.")
+#        print("Enter 11 to Find the Factorial of a Given Number.")
+#        print("Enter 12 to find the Fibonacci series toa given Number.")
+#        print("Enter 13 to Exit the Program.")
+
+
+
+
+
+
 #Program to find the sum of a given number
 def sumOfNum():
     print("_"*20)
@@ -135,6 +154,25 @@ def totalFactors():
     print(f"Total number of Factors are {count10} of {temp10}")
 #totalFactors()
 
+#Program to find the Fibonacci series toa given Number.
+def fibonacci():
+    num = int(input("Enter number to print Series: "))
+    num1 = 0
+    num2 = 1
+    i = 0
+    while(i<=num):
+        print(i)
+        num1 = num2
+        num2 = i
+        i = num1 + num2
+#fibonacci()
+#Program to Find the Factorial of a Given Number
+def factorial():
+    numb = int(input("Enter number to find Factorial: "))
+    for i in range(1,numb+1):
+        fact = fact * i
+    print(f"Factorail of {numb} is {fact}")
+#factorial()
 
 def main():
     
@@ -149,7 +187,9 @@ def main():
         print("Enter 8 to check weather the number is Palindrome or Not.")
         print("Enter 9 to find the factors of given Number.")
         print("Enter 10 to find the Total Number of Factors of a given Number.")
-        print("Enter 11 to Exit the Program.")
+        print("Enter 11 to Find the Factorial of a Given Number.")
+        print("Enter 12 to find the Fibonacci series toa given Number.")
+        print("Enter 13 to Exit the Program.")
         print("_"*20)
         print("\n")
         choice = int(input("Enter number for choice: "))
@@ -174,6 +214,10 @@ def main():
         elif choice == 10:
             totalFactors()
         elif choice == 11:
+            factorial()
+        elif choice == 12:
+            fibonacci()
+        elif choice == 13:
             print("You Have successfully Exit the Program.")
             break
         else:
