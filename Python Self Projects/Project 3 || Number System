@@ -1,0 +1,181 @@
+#Program to find the sum of a given number
+def sumOfNum():
+    print("_"*20)
+    print("\n")
+    num1 = int(input("Enter an Integer: "))
+    temp1 = num1
+    sum1 = 0
+    while(num1>0):
+        sum1 = sum1+num1%10
+        num1=num1//10
+
+    print(f"Sum of {temp1} is {sum1}")
+#sumOfNum()
+
+#Program to find the sum of square of given number
+def sumOfSqNum():
+    print("_"*20)
+    print("\n")
+    num2 = int(input("Enter integer to find the sum of square of num: "))
+    temp2 = num2
+    sum2 = 0
+    while(num2>0):
+        sum2=sum2+(num2%10)**2
+        num2=num2//10
+    print(f"Sum of {temp2} with square is {sum2}")
+#sumOfSqNum()
+
+#Program to find the sum of cube of given number
+def sumOfCubeNum():
+    print("_"*20)
+    print("\n")
+    num3 = int(input("Enter integer to find the sum of cube of num: "))
+    temp3 = num3
+    sum3 = 0
+    while(num3>0):
+        sum3=sum3+(num3%10)**3
+        num3=num3//10
+    print(f"Sum of {temp3} with square is {sum3}")
+#sumOfCubeNum()
+    
+#Program to check weather the number is ArmStrong or not
+def armStrong():
+    print("_"*20)
+    print("\n")
+    num4 = int(input("Enter an integer to check weather the number is ArmStrong or not: "))
+    temp4 = num4
+    sum4 = 0
+    while(num4>0):
+        sum4 = sum4 + (num4%10)**3
+        num4 = num4 // 10
+    if sum4 == temp4:
+        print(f"{temp4} is an ArmStrong Number.")
+    else:
+        print(f"{temp4} is not an ArmStrong number.")
+#armStrong()
+
+#Program to find the Product of a given Number        
+def proOfNum():
+    print("_"*20)
+    print("\n")
+    num5 = int(input("Enter an int to find the product of given number: "))
+    temp5 = num5
+    pro5 = 1
+    while(num5>0):
+        pro5 = pro5*(num5%10)
+        num5 = num5//10
+    print(f"Product of {temp5} is {pro5}")
+#proOfNum()
+
+#Program to find the Reverse of the number    
+def revOfNum():
+    print("_"*20)
+    print("\n")
+    num6 = (input("Enter a number to check its reverse: "))
+    temp6 =num6
+    rev = num6[::-1]
+    print(rev)
+#revOfNum()
+
+#Program to find the sum of even and product of odd numbers
+def sumAndPro():
+    print("_"*20)
+    print("\n")
+    num7 = int(input("Enter a number to find sum of even and product of odd num: "))
+    temp7 = num7
+    sum7 = 0
+    pro7 = 1
+    while(num7>0):
+        a = num7%10
+        if a%2==0:
+            sum7 = sum7 + a
+        if a%2!=0:
+            pro7 = pro7 * a
+        num7 = num7//10
+    print(f"Sum of even numbers of {temp7} is {sum7}")
+    print(f"Product of odd numbers of {temp7} is {pro7}")
+#sumAndPro()
+
+#Program to check weather the number is Palindrome or not.
+def palindrome():
+    print("_"*20)
+    print("\n")
+    num8 = int(input("Enter a number to check weather it is Palindrome or not: "))
+    temp8 = num8
+    rev8 = num8[::-1]
+    if rev8 == num8:
+        print(f"The given number {temp8} is palindrome.")
+    else:
+        print(f"The given number {temp8} if not a Palindrome")
+#palindrome()
+        
+#Program to find the factors of given number.
+def factorsOfNum():
+    print("_"*20)
+    print("\n")
+    num9 = int(input("Enter a number to show the factors of it: "))
+    temp9 = num9
+    for i in range(1,num9+1):
+        if num9%i==0:
+            print(i,end = " ")
+    print()  
+
+#factorsOfNum()
+  
+# Program to find the total number of factors of a given number
+def totalFactors():
+    print("_"*20)
+    print("\n")
+    num10 = int(input("Enter number to count the total number of factors: "))
+    temp10 = num10
+    count10 = 0
+    for i in range(1,num10+1):
+        if num10%i==0:
+            count10 +=1
+    print(f"Total number of Factors are {count10} of {temp10}")
+#totalFactors()
+
+
+def main():
+    
+    while True:
+        print("Enter 1 to find the sum of a given Number.")
+        print("Enter 2 to find the sum of square of given Number.")
+        print("Enter 3 to find the sum of cube of given Number.")
+        print("Enter 4 to check weather the number is ArmStrong or Not.")
+        print("Enter 5 to find the Product of a given Number.")
+        print("Enter 6 to find the Reverse of the Number.")
+        print("Enter 7 to find the sum of even and product of odd Numbers.")
+        print("Enter 8 to check weather the number is Palindrome or Not.")
+        print("Enter 9 to find the factors of given Number.")
+        print("Enter 10 to find the Total Number of Factors of a given Number.")
+        print("Enter 11 to Exit the Program.")
+        print("_"*20)
+        print("\n")
+        choice = int(input("Enter number for choice: "))
+        if choice==1:
+            sumOfNum()
+        elif choice == 2:
+            sumOfSqNum()
+        elif choice==3:
+            sumOfCubeNum()
+        elif choice == 4:
+            armStrong()
+        elif choice == 5:
+            proOfNum()
+        elif choice == 6:
+            revOfNum()
+        elif choice == 7:
+            sumAndPro()
+        elif choice == 8:
+            palindrome()
+        elif choice == 9:
+            factorsOfNum()
+        elif choice == 10:
+            totalFactors()
+        elif choice == 11:
+            print("You Have successfully Exit the Program.")
+            break
+        else:
+            print("Invalid Input")
+main()
