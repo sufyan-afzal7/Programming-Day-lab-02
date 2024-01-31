@@ -1,0 +1,17 @@
+from datetime import datetime
+
+def greetOnTime():
+    currentTime = datetime.now().time()
+    if currentTime.hour < 12:
+        greet = "Good Morning"
+    elif currentTime.hour < 17:
+        greet = "Good AfterNoon"
+    elif currentTime.hour < 21:
+        greet = "Good Evening"
+    else:
+        greet = "Good Night"
+    return greet
+greeting = greetOnTime()
+print(greeting)
+print(datetime.now().time())
+print(datetime.now().date())
