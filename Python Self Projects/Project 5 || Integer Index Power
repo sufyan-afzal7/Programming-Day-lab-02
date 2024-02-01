@@ -1,0 +1,21 @@
+# This is the game that takes an integer as input. 
+#Then separate each digit. when the input is separated 
+#  each digit should give result as raised to the power of its index digit.
+def separateToFindIndexPower():
+    numbers = []
+    num1 = int(input("Enter the number: "))
+    temp1 = num1
+    n = len(str(num1))
+    for i in range(n):
+        s = num1%10
+        numbers.append(s)
+        num1 = num1 // 10
+    #print(numbers)
+    #print(numbers[::-1])
+    number = numbers[::-1]
+    #print(number)
+    k = 0
+    for j in number:
+        print(j ** k)
+        k+=1
+separateToFindIndexPower()
