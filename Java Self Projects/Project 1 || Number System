@@ -1,0 +1,70 @@
+import java.util.Scanner;
+class xyz{
+    public static void main(String[] args){
+        Scanner s = new Scanner(System.in);
+        System.out.print("Enter 1 to call function or 0 to exit: ");
+        int option = s.nextInt();
+        while(true)
+        {
+            if(option == 1){
+            myFun();}
+            else if(option == 0)
+            {break;}
+            else{
+                System.out.print("Invalid Input");
+            }
+
+        }
+
+    }
+    public static void myFun(){
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter your name: ");
+        String name = sc.next();
+        System.out.print("Hey Mr. " + name + " We hope are doing Good");
+        System.out.print("Enter number1: ");
+        int num1 = sc.nextInt();
+        System.out.print("Enter number2: ");
+        int num2 = sc.nextInt();
+        System.out.print("Enter float1: ");
+        float f1 = sc.nextFloat();
+        System.out.print("Enter float2: ");
+        float f2 = sc.nextFloat();
+        System.out.print("Enter double1: ");
+        double d1 = sc.nextDouble();
+        System.out.print("Enter double2: ");
+        double d2 = sc.nextDouble();       
+        System.out.print("Enter the operator: ");
+        char op = sc.next().charAt(0);
+
+
+
+
+
+        switch(op){
+            case '+':
+            System.out.print("The sum of integers "+ num1 + " and " + num2 + " is: " + num1+num2 + "\n");
+            System.out.print("The sum of floats "+ f1 + " and " + f2 + " is: " + f1+f2 + "\n" );
+            System.out.print("The sum of doubles "+ d1 + " and " + d2 + " is: " + d1+d2 + "\n");
+            break;
+            case '-':
+            System.out.print("The subtraction of integers "+ num1 + " and " + num2 + " is: " + (num1-num2) + "\n");
+            System.out.print("The subtraction of floats "+ f1 + " and " + f2 + " is: " + (f1-f2) + "\n");
+            System.out.print("The subtraction of doubles "+ d1 + " and " + d2 + " is: " + (d1-d2) + "\n");
+            break;
+            case '*':
+            System.out.print("The sum of integers "+ num1 + " and " + num2 + " is: " + (num1*num2) + "\n");
+            System.out.print("The sum of floats "+ f1 + " and " + f2 + " is: " + (f1*f2) + "\n");
+            System.out.print("The sum of doubles "+ d1 + " and " + d2 + " is: " + (d1*d2) + "\n");
+            break;
+            case '/':
+            System.out.print("The sum of integers "+ num1 + " and " + num2 + " is: " + (num1/num2) + "\n");
+            System.out.print("The sum of floats "+ f1 + " and " + f2 + " is: " + (f1/f2) + "\n");
+            System.out.print("The sum of doubles "+ d1 + " and " + d2 + " is: " + (d1/d2) + "\n");
+            break;
+            default:
+            System.out.println("Invalid Input");
+
+        } 
+    }
+}
