@@ -1,0 +1,785 @@
+import java.util.Scanner;
+import java.lang.Math;
+import java.util.InputMismatchException;
+import java.util.ArrayList;
+import java.util.HashMap;
+class assignment1{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+     while (true) {
+        System.out.println("Enter 1 to execute proggram # 1");
+        System.out.println("Enter 2 to execute proggram # 2");
+        System.out.println("Enter 3 to execute proggram # 3");
+        System.out.println("Enter 4 to execute proggram # 4");
+        System.out.println("Enter 5 to execute proggram # 5");
+        System.out.println("Enter 6 to execute proggram # 6");
+        System.out.println("Enter 7 to execute proggram # 7");
+        System.out.println("Enter 8 to execute proggram # 8");
+        System.out.println("Enter 9 to execute proggram # 9");
+        System.out.println("Enter 10 to execute proggram # 10");
+        System.out.println("Enter 11 to execute proggram # 11");
+        System.out.println("Enter 12to execute proggram # 12");
+        System.out.println("Enter 13 to execute proggram # 13");
+        System.out.println("Enter 14 to execute proggram # 14");
+        System.out.println("Enter 15 to execute proggram # 15");
+        System.out.println("Enter 16 to execute proggram # 16");
+        System.out.println("Enter 17 to execute proggram # 17");
+        System.out.println("Enter 18 to execute proggram # 18");
+        System.out.println("Enter 19 to execute proggram # 19");
+        System.out.println("Enter 20 to execute proggram # 20");
+        System.out.println("Enter 21 to execute proggram # 21");
+        System.out.println("Enter 22 to execute proggram # 22");
+        System.out.println("Enter 23 to exit the program.");
+        System.out.println();
+        System.out.println("-----------------------------------");
+        System.out.print("Enter number: ");
+        int choice = sc.nextInt();
+        switch (choice) {
+            case 1:
+                program1();
+                break;
+            case 2:
+                program2();
+                break;
+            case 3:
+                program3();
+                break;
+            case 4:
+                program4();
+                break;
+            case 5:
+                program5();
+                break;
+            case 6:
+                program6();
+                break;
+            case 7:
+                program7();
+                break;
+            case 8:
+                program8();
+                break;
+            case 9:
+                program9();
+                break;
+            case 10:
+                program10();
+                break;
+            case 11:
+                program11();
+                break;
+            case 12:
+                program12();
+                break;
+            case 13:
+                program13();
+                break;
+            case 14:
+                program14();
+                break;
+            case 15:
+                program15();
+                break;
+            case 16:
+                program16();
+                break;
+            case 17:
+                program17();
+                break;
+            case 18:
+                program18();
+                break;
+            case 19:
+                program19();
+                break;
+            case 20:
+                program20();
+                break;
+            case 21:
+                program21();
+                break;
+            case 22:
+                program22();
+                break;
+            case 23:
+                System.out.println("You Have Exit the Main Program.");
+                break;
+        
+            default:
+                System.out.println("Invalid input to acess the Program.");
+                break;
+        }
+        
+     }  
+        
+       
+    }
+
+
+
+    // Program number 1
+    public static void program1(){
+        System.out.println("Program for sum of two numbers.");
+        Scanner sc1 = new Scanner(System.in);
+        System.out.print("Enter 1st num: ");
+        int num1 = sc1.nextInt();
+        System.out.print("Enter 2nd num: ");
+        int num2 = sc1.nextInt();
+        System.out.print("Sum = "+(num1+num2));
+        sc1.close(); 
+    }
+
+
+
+
+
+    // Program number 2
+    public static void program2(){
+        System.out.println("Program for telling number of Seconds in Hours.");
+        Scanner sc2 = new Scanner(System.in);
+        System.out.print("Enter number of hours: ");
+        double hour2 = sc2.nextDouble();
+        double inSeconds = hour2 * 3600;
+        System.out.print("The number of seconds in "+hour2+" are "+inSeconds);
+        sc2.close();
+    }
+
+
+
+
+
+    // program number 3
+    public static void program3(){
+        System.out.println("Program to claculate radius of circle.");
+        Scanner sc3 = new Scanner(System.in);
+        System.out.print("Enter radius: ");
+        float radius3 = sc3.nextFloat();
+        float area3 = (float)(Math.PI*(radius3*radius3));
+        System.out.printf("Area = %.2f",area3);
+        sc3.close();
+    }
+
+
+
+
+
+    // Program number 4
+    public static void program4(){
+        System.out.println("Program for conversion of temprature from one unit to another.");
+        while(true){
+            
+        Scanner sc4  = new Scanner(System.in);
+        System.out.println("Enter 1 to from celcius to kelvin.");
+        System.out.println("Enter 2 to from celcius to Fahrenheit.");
+        System.out.println("Enter 3 to from Fahrenheit to kelvin.");
+        System.out.println("Enter 4 to from kelvin to Fahrenheit.");
+        System.out.println("Enter 5 to from kelvin to celcius.");
+        System.out.println("Enter 6 to from Fahrenheit to celcius.");
+        System.out.println("Enter 7 to Exit.");
+        System.out.print("Enter number: ");
+        int num1 = sc4.nextInt();
+        if(num1 == 5){
+            System.out.println("You have Exit the Proram.");
+            break;
+        }else{
+        switch(num1){
+            case 1:
+            System.out.print("Enter temprature: ");
+            float temp1 = sc4.nextFloat();
+            float realTemp1  = (float)(temp1+273.15);
+            System.out.println("Temprature from celcius = "+temp1+" to kelvin = "+realTemp1);
+            break;
+            case 3:
+            System.out.print("Enter temprature: ");
+            float temp3 = sc4.nextFloat();
+            float realTemp3  = (float)(((temp3-32)*(5/9))+273.15);
+            System.out.println("Temprature from Fahrenheit = "+temp3+" to kelvin = "+realTemp3);
+            break;
+            case 2:
+            System.out.print("Enter temprature: ");
+            float temp2 = sc4.nextFloat();
+            float realTemp2  = (float)((temp2*(9/5))+32);
+            System.out.println("Temprature from celcius = "+temp2+" to Fahrenheit = "+realTemp2);
+            break;
+            case 4:
+            System.out.print("Enter temprature: ");
+            float temp4 = sc4.nextFloat();
+            float realTemp4  = (float)(((temp4-273.15)*(9/5))+32);
+            System.out.println("Temprature from Kelvin = "+temp4+" to Fahrenheit = "+realTemp4);
+            break;
+            case 5:
+            System.out.print("Enter temprature: ");
+            float temp5 = sc4.nextFloat();
+            float realTemp5  = (float)(temp5-273.15);
+            System.out.println("Temprature from celcius = "+temp5+" to kelvin = "+realTemp5);
+            break;
+            case 6:
+            System.out.print("Enter temprature: ");
+            float temp6 = sc4.nextFloat();
+            float realTemp6  = (float)((temp6-32)*(5/9));
+            System.out.println("Temprature from Fahrenheit = "+temp6+" to kelvin = "+realTemp6);
+            break;
+            default:
+            System.out.println("Invalid Input.");
+            break;
+            
+        }
+        }
+        sc4.close();
+        }
+        
+    
+    }
+
+
+
+
+    // Program number 5
+    
+    public static void program5(){
+     try{ 
+    Scanner sc5 = new Scanner(System.in);
+    System.out.print("Enter an Integer: ");
+    int num5 = sc5.nextInt();
+
+
+    int tempr5 = num5;
+    int sum = 0;
+    while (num5>0) {
+        sum  = sum + num5%10;
+        num5 = num5/10;
+    }
+    System.out.println("The sum of "+tempr5+" is = "+sum);
+    
+    sc5.close();
+        
+    }catch(InputMismatchException e){
+      System.err.println("Please Enter valid input."); 
+       
+    }
+    
+    
+}
+
+
+
+// Program number 6
+
+public static void program6(){
+
+Scanner sc6 = new Scanner(System.in);
+System.out.print("Enter number: ");
+int num6 = sc6.nextInt();
+int temp6 = num6;
+int rev6 = 0;
+while (num6!=0) {
+    int tem6 = num6%10;
+    rev6 = rev6*10 + tem6;
+    num6 = num6/10;
+}
+System.out.print("The reverse of the number "+temp6+" is = "+rev6);
+sc6.close();
+}
+
+
+
+
+
+
+
+// Program number 7
+public static void program7(){
+    Scanner sc7 = new Scanner(System.in);
+    System.out.print("Enter value of Shoes: ");
+    int shoes7 = sc7.nextInt();
+    System.out.print("Enter vlaue of Dress: ");
+    int dress7 = sc7.nextInt();
+    System.out.print("Enter vlaue of handBag: ");
+    int handBag7 = sc7.nextInt();
+    int sum7 = shoes7+dress7+handBag7;
+    System.out.println("Sum of "+shoes7+", "+dress7+", and "+handBag7+" is = "+sum7);
+    sc7.close();
+
+
+}
+
+
+
+
+
+// program number 8
+public static void program8(){
+
+    double distance = 35;  
+       double speed = 9 / 5 * 60;
+       double time = distance / speed;
+       System.out.println("It will take Sarah " + time + " seconds to walk to her friend's house.");
+
+}
+
+
+
+
+// program number 9
+public static void program9(){
+    final double pizzaCost = 12;
+    final int numPizzas = 5;
+    final double drinksCostPerPerson = 3;
+    double totalPizzaCost = numPizzas * pizzaCost;
+    final int numPeople = 7;
+    double totalCost = totalPizzaCost + (numPeople * drinksCostPerPerson);
+    double costPerPerson = totalCost / numPeople;
+    System.out.printf("Each friend needs to contribute $%.2f for the party.\n", costPerPerson);
+
+}
+
+
+
+
+// Program number 10
+public static void program10(){
+  Scanner sc10 = new Scanner(System.in);
+  System.out.print("Enter the value of time: ");
+  double time10 = sc10.nextDouble();
+  double pro = 0.5 * 2.17;
+  double probability = Math.pow(pro, (-0.2*time10));  
+  System.out.print("The probability through time, "+time10+" will be "+probability);
+  sc10.close();
+
+}
+
+
+
+
+// Program number 11
+public static void program11() {
+    final double PI11 = 3.14159;
+    double surfaceArea11 = 144 * PI11;
+    double radius11 = Math.sqrt(surfaceArea11/(4*PI11));
+    System.out.printf("The radius of the planet is %.2f units.\n", radius11);
+    
+}
+
+
+
+
+// Program number 12
+public static void program12(){
+    int i12 = 0;
+    double acc12;
+    for(acc12 = 80; acc12<95; acc12 = acc12+1.5){
+        i12++;
+    }
+    System.out.print("The accuracy will be " +acc12+ "% at the iteration of "+i12);
+
+}
+
+
+
+
+
+// Program number 13
+public static void program13(){
+    Scanner sc13 = new Scanner(System.in);
+    System.out.print("Enter any number to convert it into scientific notaion: ");
+    double mass13 = sc13.nextDouble();
+    String inSN = String.format("%g", mass13);
+    System.out.print("The scientific notaion of "+mass13+" will be "+inSN);
+    sc13.close();
+}
+
+
+
+
+// Program Number 14
+public static void program14(){
+    while(true){
+    Scanner sc14 = new Scanner(System.in);
+    System.out.println("Enter 1 to convert from USD to EUR.");
+    System.out.println("Enter 2 to convert from USD to JPY.");
+    System.out.println("Enter 3 to convert from EUR to JPY.");
+    System.out.println("Enter 4 to convert from EUR to USD.");
+    System.out.println("Enter 5 to convert from JPY to USD.");
+    System.out.println("Enter 6 to convert from JPY to EUR.");
+    System.out.println("Enter 7 to Exit.");
+    System.out.print("Enter number: ");
+    int choice = sc14.nextInt();
+    if(choice==7){
+        System.out.println("You have Exit the Program.");
+        break;
+    }
+    switch(choice){
+        case 1:
+        System.out.print("Enter amount of USD: ");
+        double USDtoEUR = sc14.nextDouble();
+        double USDtoEUR2 = USDtoEUR * 0.85;
+        System.out.println("The convertion of "+USDtoEUR+"USD will be "+USDtoEUR2+"EUR.");
+        break;
+        case 2:
+        System.out.print("Enter amount of USD: ");
+        double USDtoJPY = sc14.nextDouble();
+        double USDtoJPY2 = USDtoJPY * 110;
+        System.out.println("The convertion of "+USDtoJPY+"USD will be "+USDtoJPY2+"JPY.");
+        break;
+        case 3:
+        System.out.print("Enter amount of EUR: ");
+        double EURtoJPY = sc14.nextDouble();
+        double EURtoJPY2 = EURtoJPY * 130;
+        System.out.println("The convertion of "+EURtoJPY+"EUR will be "+EURtoJPY2+"JPY.");
+        break;
+        case 4:
+        System.out.print("Enter amount of EUR: ");
+        double EURtoUSD = sc14.nextDouble();
+        double EURtoUSD2 = EURtoUSD/0.85;
+        System.out.println("The convertion of "+EURtoUSD+"EUR will be "+EURtoUSD2+"USD.");
+        break;
+        case 5:
+        System.out.print("Enter amount of JPY: ");
+        double JPYtoUSD = sc14.nextDouble();
+        double JPYtoUSD2 = JPYtoUSD/110;
+        System.out.println("The convertion of "+JPYtoUSD+"JPY will be "+JPYtoUSD2+"USD.");
+        break;
+        case 6:
+        System.out.print("Enter amount of JPY: ");
+        double JPYtoEUR = sc14.nextDouble();
+        double JPYtoEUR2 = JPYtoEUR/130;
+        System.out.println("The convertion of "+JPYtoEUR+"USD will be "+JPYtoEUR2+"EUR.");
+        break;
+        default:
+        System.out.println("Invalid input.");
+
+    }
+    sc14.close();
+}
+
+
+}
+
+
+
+
+
+// Program Numbber 15
+public static void program15(){
+    Scanner sc15 = new Scanner(System.in);
+    System.out.print("Enter NUmber of Guests: ");
+    int numOfGuests = sc15.nextInt();
+    double chicken = numOfGuests/3.0;
+    double spiceBlend = (numOfGuests*2.0)/5.0;
+    double rice = numOfGuests*150.0;
+    System.out.println("According to number of guests: "+numOfGuests);
+    System.out.println("The amount for chicken will be: "+chicken+" Kg");
+    System.out.println("The amount for spice blend will be: "+spiceBlend+" Tb spoon");
+    System.out.println("The amount forchicken will be: "+rice+" g");
+    sc15.close();
+}
+
+
+
+
+
+
+// Program number 16
+public static void program16(){
+
+        Scanner sc16 = new Scanner(System.in);
+    
+        System.out.print("Enter the number of students: ");
+        int numStudents = sc16.nextInt();
+        sc16.nextLine(); // Consume the newline character after the number
+    
+        ArrayList<HashMap<String, Object>> students = new ArrayList<>();
+    
+        for (int i = 0; i < numStudents; i++) { // Modified loop condition
+          System.out.print("Enter student " + (i + 1) + "'s name: ");
+          String name = sc16.nextLine();
+    
+          System.out.print("Enter " + name + "'s marks: ");
+          double marks = sc16.nextDouble();
+          sc16.nextLine(); // Consume the newline character after the marks
+    
+          String category = "";
+          if (marks > 90) {
+            category = "Outstanding";
+          } else if (marks >= 80) {
+            category = "Excellent";
+          } else if (marks >= 70) {
+            category = "Good";
+          } else if (marks >= 60) {
+            category = "Average";
+          } else {
+            category = "Needs Improvement";
+          }
+    
+          HashMap<String, Object> studentInfo = new HashMap<>();
+          studentInfo.put("Name", name);
+          studentInfo.put("Marks", marks);
+          studentInfo.put("Category", category);
+          students.add(studentInfo);
+        }
+    
+        System.out.println("\nStudent Performance Report:");
+        System.out.println("-".repeat(60));
+        System.out.format("%-20s %-10s %-20s%n", "Name", "Marks", "Category");
+        System.out.println("-".repeat(60));
+        for (HashMap<String, Object> student : students) {
+          System.out.format("%-20s %-10.2f %-20s%n", student.get("Name"), student.get("Marks"), student.get("Category"));
+        }
+    
+        sc16.close();
+      }
+
+
+
+
+
+
+
+
+// program number 17
+public static void program17() {
+    Scanner sc17 = new Scanner(System.in);
+    System.out.print("Enter number of students: ");
+    int numOfStudents = sc17.nextInt();
+    sc17.nextLine();
+
+    ArrayList<HashMap<String, Object>> students = new ArrayList<>();
+
+    for (int i = 0; i < numOfStudents; i++) {
+        System.out.print("Enter the name of " + (i + 1) + "'s Student: ");
+        String names = sc17.nextLine();
+
+        System.out.print("Enter the marks of Assignment out of 10 of " + names + "'s: ");
+        float assignment = sc17.nextFloat();
+        sc17.nextLine();
+
+        System.out.print("Enter the marks of Quiz out of 10 of " + names + "'s: ");
+        float quiz = sc17.nextFloat();
+        sc17.nextLine();
+
+        System.out.print("Enter the marks of MidTerm out of 25 of " + names + "'s: ");
+        float midTerm = sc17.nextFloat();
+        sc17.nextLine();
+
+        System.out.print("Enter the marks of FinalTerm out of 50 of " + names + "'s: ");
+        float finalTerm = sc17.nextFloat();
+        sc17.nextLine();
+
+        float marks = ((0.1f * assignment) + (quiz * 0.15f) + (midTerm * 0.25f) + (0.50f * finalTerm)) / 4;
+        float per = (marks / 4) * 100;
+
+        HashMap<String, Object> studentInfo = new HashMap<>();
+        studentInfo.put("Name", names);
+        studentInfo.put("Marks", marks);
+        studentInfo.put("Percentage", per);
+
+        students.add(studentInfo);
+        }
+
+    System.out.println("\nStudent Performance Report:");
+    System.out.println("-".repeat(60));
+    System.out.format("%-20s %-10s %-20s%n", "Name", "Marks", "Percentage");
+    System.out.println("-".repeat(60));
+
+    for (HashMap<String, Object> student : students) {
+        System.out.format("%-20s %-10.2f %-20.2f%n", student.get("Name"), student.get("Marks"), student.get("Percentage"));
+        }
+        sc17.close();
+    }
+
+
+
+
+
+
+
+
+    // Proram Number 18
+    public static void program18(){
+        Scanner sc18 = new Scanner(System.in);
+        System.out.print("Enter 1st number: ");
+        int num1 = sc18.nextInt();
+        System.out.print("Enter 2nd number: ");
+        int num2 = sc18.nextInt();
+        System.out.print("Enter 3rd number: ");
+        int num3 = sc18.nextInt();
+        int maxRage = Math.max(Math.max(num1,num2),num3);
+        int minRage = Math.min(Math.min(num1,num2),num3);
+        int rage = maxRage - minRage;
+        System.out.print("The rage will be: "+rage);
+        sc18.close();
+    }
+
+
+
+
+
+
+// Program Number 19
+    public static void program19(){
+        Scanner sc19 = new Scanner(System.in);
+        System.out.print("Enter sentence: ");
+        String sen = sc19.nextLine();
+        String[] count = sen.split(" ");
+        int j = 0;
+        for (String i : count){
+            System.out.println(i);
+            j+=1;
+        }
+        System.out.println(j);
+        sc19.close();
+    }
+
+
+
+    
+
+
+
+
+
+    // program number 20
+  
+    public static void program20() {
+        Scanner sc20 = new Scanner(System.in);
+
+        System.out.print("Enter the speed of the passenger train (km/h): ");
+        double passengerSpeed = sc20.nextDouble();
+        System.out.print("Enter the speed of the goods train (km/h): ");
+        double goodsSpeed = sc20.nextDouble();
+        System.out.print("Enter the time taken to pass the goods train (seconds): ");
+        double time = sc20.nextDouble();
+
+        // Calculate relative speed
+        double relativeSpeed = Math.abs(passengerSpeed - goodsSpeed);
+
+        // Convert speed from km/h to m/s for length calculation
+        relativeSpeed *= 1000.0 / 3600.0;
+
+        // Calculate length of goods train
+        double length = relativeSpeed * time;
+
+        // Display result
+        System.out.println("The length of the goods train is: " + length + " meters");
+        sc20.close();
+    }
+
+
+
+
+
+
+
+
+
+    // Program Number 21
+    public static void program21(){
+        Scanner sc21 = new Scanner(System.in);
+        System.out.print("Enter number of month: ");
+        int month = sc21.nextInt();
+        System.out.print("Enter year: ");
+        int year = sc21.nextInt();
+
+        if(month==1){
+            System.out.println("This month is Januray and has 31 Days.");
+        }else if(month==2 && year%4==0){
+            System.out.println("This month is Feburary, with Leap Year and has 28 Days.");
+        }else if(month==2){
+            System.out.println("This month is Feburary and has 29 Days.");
+        
+        }else if(month==3){
+            System.out.println("This month is March and has 31 Days.");
+        
+        }else if(month==4){
+            System.out.println("This month is April and has 30 Days.");
+        
+        }else if(month==5){
+            System.out.println("This month is MAy and has 31 Days.");
+        
+        }else if(month==6){
+            System.out.println("This month is June and has 30 Days.");
+        
+        }else if(month==7){
+            System.out.println("This month is July and has 31 Days.");
+        
+        }else if(month==8){
+            System.out.println("This month is August and has 31 Days.");
+        
+        }else if(month==9){
+            System.out.println("This month is September and has 30 Days.");
+        
+        }else if(month==10){
+            System.out.println("This month is October and has 31 Days.");
+        
+        }else if(month==11){
+            System.out.println("This month is November and has 30 Days.");
+        
+        }else if(month==12){
+            System.out.println("This month is December and has 31 Days.");
+        }else {
+            System.out.println("Invalid Number of Month");
+        }
+        sc21.close();
+    }
+
+
+
+
+
+
+
+
+
+    // Program Number 22
+    public static void program22(){
+        Scanner sc22 = new Scanner(System.in);
+        System.out.print("Enter number one: ");
+        double numb1 = sc22.nextDouble();
+        System.out.print("Enter number two: ");
+        double numb2 = sc22.nextDouble();
+        System.out.print("Enter Operator: ");
+        char op22 = sc22.next().charAt(0);
+        switch (op22) {
+            case '+':
+                System.out.println("The sum of "+numb1+" and "+numb2+" is "+(numb1+numb2));
+                break;
+            case '-':
+                System.out.println("The Subtraction of "+numb1+" and "+numb2+" is "+(numb1-numb2));
+                break;
+            case '*':
+                System.out.println("The product of "+numb1+" and "+numb2+" is "+(numb1*numb2));
+                break;
+            case '/':
+                System.out.println("The division of "+numb1+" and "+numb2+" is "+(numb1/numb2));
+                break;
+            case '%':
+                System.out.println("The Remainder of "+numb1+" and "+numb2+" is "+(numb1%numb2));
+                break;
+        
+            default:
+            System.out.println("Invalid Operator.");
+                break;
+        }
+        sc22.close();
+
+    }
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+    
+
+
+
+    
+
