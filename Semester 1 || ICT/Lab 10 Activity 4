@@ -1,0 +1,12 @@
+#Write a program that reads an integer number and prints its previous and next numbers.
+
+
+num = int(input("Enter an integer: "))
+
+
+previous_num = num - 1
+next_num = num + 1
+
+
+print(f"The previous number of {num} is {previous_num}")
+print(f"The next number of {num} is {next_num}")
