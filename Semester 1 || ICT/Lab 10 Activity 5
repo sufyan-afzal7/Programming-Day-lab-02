@@ -1,0 +1,8 @@
+#Python program to illustrate comments
+
+# Addition Function 
+''' Addition Function 
+This function takes in two numbers and returns the sum 
+@param1 number 
+@param2 number 
+@returns number '''
