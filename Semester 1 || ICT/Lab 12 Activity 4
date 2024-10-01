@@ -1,0 +1,24 @@
+# Python program to illustrate membership testing .
+
+my_list = [1, 2, 3, 4, 5, 6]
+my_string = "Hello, World!"
+
+number_to_check = 3
+if number_to_check in my_list:
+    print(f"{number_to_check} is present in the list.")
+else:
+    print(f"{number_to_check} is not present in the list.")
+
+char_to_check = 'W'
+if char_to_check in my_string:
+    print(f"'{char_to_check}' is present in the string.")
+else:
+    print(f"'{char_to_check}' is not present in the string.")
+
+number_to_check_not = 10
+if number_to_check_not not in my_list:
+    print(f"{number_to_check_not} is not present in the list.")
+
+char_to_check_not = 'z'
+if char_to_check_not not in my_string:
+    print(f"'{char_to_check_not}' is not present in the string.")
