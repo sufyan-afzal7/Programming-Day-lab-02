@@ -1,0 +1,9 @@
+# A string is a palindrome if it reads the same forward and backward. The words “mom,” “dad,” and “noon,” for instance, are all palindromes
+
+s = 'mom'
+s1 = s[::-1]    
+
+if s.lower() == s1.lower():
+    print("String is Palindrome.")
+else:
+    print("String is not Palindrome.")
