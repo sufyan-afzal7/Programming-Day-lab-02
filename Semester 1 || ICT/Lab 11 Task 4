@@ -1,0 +1,25 @@
+# Write a dummy authentication system program in which you accept user inputs for email and password. 
+#Let's say the correct email and password are abc@gmail.com and abc respectively. 
+#If the email and password entered are correct it should display “User is logged in”. 
+#If the email is correct, then prompt the user that the password is not correct. 
+#If the password is correct then prompt the user to enter the correct email. 
+#If both are incorrect then display the corresponding message
+
+
+
+correct_email = "abc@gmail.com"
+correct_password = "abc"
+
+
+email = input("Enter your email: ")
+password = input("Enter your password: ")
+
+
+if email == correct_email and password == correct_password:
+    print("User is logged in.")
+elif email == correct_email:
+    print("Password is not correct.")
+elif password == correct_password:
+    print("Please enter the correct email.")
+else:
+    print("Both email and password are incorrect.")
