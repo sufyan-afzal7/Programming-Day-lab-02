@@ -1,0 +1,15 @@
+# Python program to illustrate a function definition with return
+
+
+
+def calculate_square(number):
+    return number ** 2
+
+
+num = float(input("Enter a number: "))
+
+
+square = calculate_square(num)
+
+
+print(f"The square of {num} is {square}.")
