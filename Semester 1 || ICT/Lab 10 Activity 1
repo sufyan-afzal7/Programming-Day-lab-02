@@ -1,1 +1,37 @@
 #Python program to do some math operations on numbers
+
+
+def math_operations(a, b):
+
+    add = a + b
+
+    subtract = a - b
+
+    multiply = a * b
+
+    if b != 0:
+        divide = a / b
+    else:
+        divide = "Undefined (division by zero)"
+
+    if b != 0:
+        modulus = a % b
+    else:
+        modulus = "Undefined (modulus by zero)"
+    
+
+    return add, subtract, multiply, divide, modulus
+
+
+num1 = float(input("Enter first number: "))
+num2 = float(input("Enter second number: "))
+
+
+add, subtract, multiply, divide, modulus = math_operations(num1, num2)
+
+
+print(f"Addition: {num1} + {num2} = {add}")
+print(f"Subtraction: {num1} - {num2} = {subtract}")
+print(f"Multiplication: {num1} * {num2} = {multiply}")
+print(f"Division: {num1} / {num2} = {divide}")
+print(f"Modulus: {num1} % {num2} = {modulus}")
