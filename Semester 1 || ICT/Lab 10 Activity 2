@@ -1,0 +1,14 @@
+#Python program to illustrate a string
+
+# Define a string
+example_string = "Hello, Python Strings!"
+
+# Display the string
+print("The string is:", example_string)
+
+# String operations
+print("Length of the string:", len(example_string))  
+print("Uppercase:", example_string.upper())  
+print("Lowercase:", example_string.lower())  
+print("First 5 characters:", example_string[:5]) 
+print("Reversed string:", example_string[::-1])  
