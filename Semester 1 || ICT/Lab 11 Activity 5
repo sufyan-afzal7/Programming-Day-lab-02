@@ -1,0 +1,34 @@
+# Write a program to find out the Chinese zodiac sign for a given year. The Chinese zodiac sign is based on a 12-year cycle, 
+#and each year in this cycle is represented by an 
+# animal—1 monkey, 2 rooster, 3 dog, 4 pig, 5 rat, 6 ox, 7 tiger, 8 rabbit, 9 dragon, 10 snake, 11 horse, and 12 sheep
+
+
+
+def get_chinese_zodiac(year):
+    zodiac_signs = [
+        "Monkey",  # 1
+        "Rooster",  # 2
+        "Dog",      # 3
+        "Pig",      # 4
+        "Rat",      # 5
+        "Ox",       # 6
+        "Tiger",    # 7
+        "Rabbit",   # 8
+        "Dragon",   # 9
+        "Snake",    # 10
+        "Horse",    # 11
+        "Sheep"     # 12
+    ]
+    
+
+    index = (year - 4) % 12
+    return zodiac_signs[index]
+
+
+year = int(input("Enter a year: "))
+
+
+zodiac_sign = get_chinese_zodiac(year)
+
+
+print(f"The Chinese zodiac sign for the year {year} is: {zodiac_sign}.")
