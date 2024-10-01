@@ -1,0 +1,26 @@
+# Python program to illustrate using a string with escaped characters
+
+
+
+print("This is the first line.\nThis is the second line.")  # \n
+
+
+print("Column 1:\tColumn 2")  # \t
+
+print("This is a backslash: \\")  # \\
+
+print("This is a single quote: \'")  # \'
+
+print("This is a double quote: \"")  # \"
+
+print("First part of the line.\rSecond part.")  # \r
+
+print("First Line.\vSecond Line.")  # \v
+
+print("First Page.\fSecond Page.")  # \f
+
+# Octal value escape sequence (represents the letter 'A')
+print("This is the letter A: \101")  # \101
+
+print("This is the letter B: \x42")  # \x42
+
