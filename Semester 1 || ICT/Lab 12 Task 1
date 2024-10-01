@@ -1,0 +1,13 @@
+# Write a program to which replaces the first character of a string with the character ‘z’
+
+
+def replace_first_character(input_string):
+    if len(input_string) == 0:
+        return input_string  
+    else:
+        return 'z' + input_string[1:]
+
+user_input = input("Enter a string: ")
+
+modified_string = replace_first_character(user_input)
+print("Modified string:", modified_string)
