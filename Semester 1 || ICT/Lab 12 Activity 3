@@ -1,0 +1,21 @@
+# Python program to illustrate string concatenation, indexing, and slicing.
+
+string1 = "Hello"
+string2 = "World"
+
+concatenated_string = string1 + " " + string2
+print("Concatenated String:", concatenated_string)
+
+first_character = concatenated_string[0]  
+last_character = concatenated_string[-1]   
+print("First Character:", first_character)
+print("Last Character:", last_character)
+
+substring = concatenated_string[0:5]  
+print("Substring (first 5 characters):", substring)
+
+sliced_string = concatenated_string[::2]  
+print("Sliced String (every second character):", sliced_string)
+
+negative_indexed_character = concatenated_string[-6]  
+print("Character at negative index -6:", negative_indexed_character)
