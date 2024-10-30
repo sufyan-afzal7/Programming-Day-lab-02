@@ -1,0 +1,15 @@
+# Function to print all natural numbers from 1 to n
+
+
+def print_natural_numbers(n):
+    number = 1
+    while number <= n:
+        print(number)
+        number += 1
+
+# Input from the user
+n = int(input("Enter a positive integer: "))
+
+# Call the function to print natural numbers
+print("Natural numbers from 1 to", n, "are:")
+print_natural_numbers(n)
