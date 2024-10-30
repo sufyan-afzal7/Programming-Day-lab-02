@@ -1,0 +1,25 @@
+#Write a program to ask user input for a number. Check if it is a prime number. 
+#If it is, end the program but if it is not ask for the user input again till the user enters a prime number.
+
+
+def is_prime(num):
+    if num < 2:
+        return False
+    for i in range(2, int(num ** 0.5) + 1):
+        if num % i == 0:
+            return False
+    return True
+
+
+while True:
+    try:
+        number = int(input("Enter a number: "))
+        
+        if is_prime(number):
+            print("This is a prime number. Program will end.")
+            break  # Exit the loop if a prime number is entered
+        else:
+            print("This is not a prime number. Please try again.")
+    
+    except ValueError:
+        print("Invalid input. Please enter a valid integer.")
